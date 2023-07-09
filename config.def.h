@@ -24,7 +24,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = {"Web","Term","Apps", "Music", "Video"};
+static const char *tags[] = {"🌐","💻","💾", "🎵", "🎥"};
 
 
 
