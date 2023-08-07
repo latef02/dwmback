@@ -24,7 +24,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = {"🌐","💻","💾", "🎵", "🎥"};
+static const char *tags[] = {"🌐","💻","💾", "📻", "📹"};
 
 
 
@@ -36,7 +36,6 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Thunar",     NULL,       NULL,   1 << 2,            0,          -1 },	
 	{ "alacritty",     NULL,       NULL,   1 << 2,            0,          -1 },
-	{ "nemo",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
