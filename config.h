@@ -85,7 +85,7 @@ static const  Key keys[] = {
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
-	{ MODKEY,                       XK_i,      incnmaster,     {.i = -1 } },
+	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_z, 	   zoom,           {0} },
@@ -100,22 +100,22 @@ static const  Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_KP_Insert,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_KP_Insert,      tag,            {.ui = ~0 } },
-	{ MODKEY,                       XK_Left,   viewtoleft,     {0} },
-	{ MODKEY,                       XK_Right,  viewtoright,    {0} },
-	{ MODKEY|ShiftMask,             XK_Left,   tagtoleft,      {0} },
-	{ MODKEY|ShiftMask,             XK_Right,  tagtoright,     {0} },
+	{ MODKEY,                       XK_parenright,   viewtoleft,     {0} },
+	{ MODKEY,                       XK_equal,  viewtoright,    {0} },
+	{ MODKEY|ShiftMask,             XK_parenright,   tagtoleft,      {0} },
+	{ MODKEY|ShiftMask,             XK_equal,  tagtoright,     {0} },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY|ShiftMask,		XK_w,		spawn,		{.v = (const char*[]){ TERMINAL, "-e", "sudo", "nmtui", NULL } } },
 
-	TAGKEYS(                        XK_KP_End,                      0)
-	TAGKEYS(                        XK_KP_Down,                      1)
-	TAGKEYS(                        XK_KP_Next,                      2)
-	TAGKEYS(                        XK_KP_Left,                      3)
-	TAGKEYS(                        XK_KP_Begin,                      4)
-	TAGKEYS(                        XK_KP_Right,                      5)
+	TAGKEYS(                        XK_ampersand,                      0)
+	TAGKEYS(                        XK_eacute,                      1)
+	TAGKEYS(                        XK_quotedbl,                      2)
+	TAGKEYS(                        XK_apostrophe,                      3)
+	TAGKEYS(                        XK_parenleft,                      4)
+/*	TAGKEYS(                        XK_minus,                      5)*/
 	{ MODKEY|ControlMask,           XK_q,      quit,           {0} },
 
         
