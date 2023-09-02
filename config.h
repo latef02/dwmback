@@ -6,6 +6,8 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappx     = 8;        /* gaps between windows */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
+static const int splitstatus        = 0;        /* 1 for split status items */
+static const char *splitdelim        = ";";       /* Character used for separating status */
 
 #define TERMINAL "alacritty"
 
