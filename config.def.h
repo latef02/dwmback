@@ -10,10 +10,9 @@ static const int splitstatus        = 0;        /* 1 for split status items */
 static const char *splitdelim        = ";";       /* Character used for separating status */
 
 #define TERMINAL "st"
+static const char *fonts[] = { "SauceCodePro Nerd Font:size=12:antialias=true:autohint=true:style=Bold" };
 
-
-static const char *fonts[]          = {"dejavu-ib:size=11","Ubuntu:weight=bold:size=8:antialias=true:hinting=true","JoyPixels:size=10:antialias=true:autohint=true"};
-static const char dmenufont[]       = "dejavu-ib:size=11";
+static const char dmenufont[]       = "dejavu-ib:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -26,9 +25,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = {"1","2","3","4","5"};
-
-
+static const char *tags[] = {">_","🌎","</>","💬","🎧","🎞️"}; 
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -111,7 +108,7 @@ static const  Key keys[] = {
 	TAGKEYS(                        XK_quotedbl,                      2)
 	TAGKEYS(                        XK_apostrophe,                      3)
 	TAGKEYS(                        XK_parenleft,                      4)
-/*	TAGKEYS(                        XK_minus,                      5)*/
+	TAGKEYS(                        XK_minus,                      5)
 	{ MODKEY|ShiftMask|ControlMask,           XK_q,      quit,           {0} },
 
         
