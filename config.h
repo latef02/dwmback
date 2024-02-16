@@ -25,7 +25,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = {">_","🌎","</>","💬","🎧","🎞️"}; 
+static char *tags[] = {"cmd", "www", "dev","Msc","chat","Vid"};
 
 static const Rule rules[] = {
 	/* xprop(1):
